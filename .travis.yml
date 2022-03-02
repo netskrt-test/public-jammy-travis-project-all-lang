@@ -1,0 +1,29 @@
+jobs:
+  include:
+    - os: rhel
+      dist: rhel8
+      language: c
+      arch: amd64
+      script:
+        - clang -coverage -O0 hello_world.c -o hello_world
+        - ./hello_world
+    - os: rhel
+      dist: rhel8
+      language: python
+      arch: amd64
+      script:
+        - python hello_world.py
+    - os: rhel
+      dist: rhel8
+      language: java
+      arch: amd64
+      script:
+        - javac hello_world.java
+        - java HelloWorld
+    - os: rhel
+      language: cpp
+      dist: rhel8
+      arch: amd64
+      script:
+        - g++ hello_world.cpp -o hello_world
+        - ./hello_world
