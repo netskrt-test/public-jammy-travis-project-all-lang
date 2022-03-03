@@ -44,19 +44,18 @@ jobs:
 #       arch: amd64
 #       script:
 #         - node hello_world.js
+#     - os: linux
+#       dist: rhel8
+#       language: php
+#       php:
+#         php:
+#           - '7.3.32'
+#       arch: amd64
+#       script:
+#         - php hello_world.php
     - os: linux
       dist: rhel8
-      language: php
-      php:
-        php:
-          - '7.3.32'
       arch: amd64
-      script:
-        - php hello_world.php
-    - os: linux
-      dist: rhel8
-      arch: amd64
-      language: node_js
       services:
         - mysql
         - postgresql
