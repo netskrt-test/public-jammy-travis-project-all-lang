@@ -37,10 +37,16 @@ jobs:
       language: go
       arch: amd64
       script:
-        - go run first.go
+        - go run hello_world.go
     - os: linux
       dist: rhel8
       language: node_js
       arch: amd64
       script:
-        - node helloWorld.js
+        - node hello_world.js
+    - os: linux
+      dist: rhel8
+      language: php
+      arch: amd64
+      script:
+        - php hello_world.php
