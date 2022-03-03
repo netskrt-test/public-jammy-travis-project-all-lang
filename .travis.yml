@@ -1,26 +1,26 @@
 jobs:
   include:
-    - os: rhel
+    - os: linux
       dist: rhel8
       language: c
       arch: amd64
       script:
         - clang -coverage -O0 hello_world.c -o hello_world
         - ./hello_world
-    - os: rhel
+    - os: linux
       dist: rhel8
       language: python
       arch: amd64
       script:
         - python hello_world.py
-    - os: rhel
+    - os: linux
       dist: rhel8
       language: java
       arch: amd64
       script:
         - javac hello_world.java
         - java HelloWorld
-    - os: rhel
+    - os: linux
       language: cpp
       dist: rhel8
       arch: amd64
