@@ -38,3 +38,9 @@ jobs:
       arch: amd64
       script:
         - go run first.go
+    - os: linux
+      dist: rhel8
+      language: node_js
+      arch: amd64
+      script:
+        - node helloWorld.js
