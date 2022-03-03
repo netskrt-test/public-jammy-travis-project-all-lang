@@ -32,24 +32,33 @@ jobs:
 #       arch: amd64
 #       script:
 #         - ruby hello_world.rb
-# #     - os: linux
-# #       dist: rhel8
-# #       language: go
-# #       arch: amd64
-# #       script:
-# #         - go run hello_world.go
+#     - os: linux
+#       dist: rhel8
+#       language: go
+#       arch: amd64
+#       script:
+#         - go run hello_world.go
 #     - os: linux
 #       dist: rhel8
 #       language: node_js
 #       arch: amd64
 #       script:
 #         - node hello_world.js
+#     - os: linux
+#       dist: rhel8
+#       language: php
+#       php:
+#         php:
+#           - '7.3.33'
+#       arch: amd64
+#       script:
+#         - php hello_world.php
     - os: linux
       dist: rhel8
-      language: php
-      php:
-        php:
-          - '7.3.33'
       arch: amd64
+      language: node_js
+      services:
+        - mysql
+        - postgresql
       script:
-        - php hello_world.php
+        - node hello_world.js
