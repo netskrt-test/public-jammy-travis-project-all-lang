@@ -32,3 +32,9 @@ jobs:
       arch: amd64
       script:
         - ruby hello_world.rb
+    - os: linux
+      dist: rhel8
+      language: go
+      arch: amd64
+      script:
+        - go run first.go
