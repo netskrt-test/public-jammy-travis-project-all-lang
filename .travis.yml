@@ -27,3 +27,8 @@ jobs:
       script:
         - g++ hello_world.cpp -o hello_world
         - ./hello_world
+    - os: linux
+      dist: rhel8
+      arch: amd64
+      script:
+        - ruby hello_world.rb
