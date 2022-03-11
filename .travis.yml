@@ -1,4 +1,5 @@
 jobs:
+  php: 7.3.32
   include:
     - os: RHEL
       language: c
@@ -32,15 +33,6 @@ jobs:
       arch: amd64
       script:
         - node hello_world.js
-    - os: linux
-      dist: rhel8
-      language: php
-      php:
-        php:
-          - '7.3.32'
-      arch: amd64
-      script:
-        - php hello_world.php
     - os: RHEL
       arch: amd64
       services:
