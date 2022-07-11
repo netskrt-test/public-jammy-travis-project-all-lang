@@ -23,6 +23,7 @@ jobs:
         - java HelloWorld
     - dist: jammy
       virt: vm
+      language: cpp
       arch: amd64
       script:
         - g++ hello_world.cpp -o hello_world
@@ -47,7 +48,8 @@ jobs:
         - elasticsearch
         - mongodb
         - couchdb
-        - mariadb
+      addons:
+        mariadb: '10.0'
     - dist: jammy
       virt: lxd
       language: c
@@ -70,6 +72,7 @@ jobs:
         - java HelloWorld
     - dist: jammy
       virt: lxd
+      language: cpp
       arch: amd64
       script:
         - g++ hello_world.cpp -o hello_world
@@ -94,7 +97,8 @@ jobs:
         - elasticsearch
         - mongodb
         - couchdb
-        - mariadb
+      addons:
+        mariadb: '10.0'
     - dist: bionic
       virt: vm
       language: c
@@ -117,6 +121,7 @@ jobs:
         - java HelloWorld
     - dist: bionic
       virt: vm
+      language: cpp
       arch: amd64
       script:
         - g++ hello_world.cpp -o hello_world
@@ -141,7 +146,8 @@ jobs:
         - elasticsearch
         - mongodb
         - couchdb
-        - mariadb
+      addons:
+        mariadb: '10.0'
     - dist: bionic
       virt: lxd
       language: c
@@ -164,6 +170,7 @@ jobs:
         - java HelloWorld
     - dist: bionic
       virt: lxd
+      language: cpp
       arch: amd64
       script:
         - g++ hello_world.cpp -o hello_world
@@ -188,7 +195,8 @@ jobs:
         - elasticsearch
         - mongodb
         - couchdb
-        - mariadb
+      addons:
+        mariadb: '10.0'
     - dist: xenial
       virt: vm
       language: c
@@ -211,6 +219,7 @@ jobs:
         - java HelloWorld
     - dist: xenial
       virt: vm
+      language: cpp
       arch: amd64
       script:
         - g++ hello_world.cpp -o hello_world
@@ -235,7 +244,8 @@ jobs:
         - elasticsearch
         - mongodb
         - couchdb
-        - mariadb
+      addons:
+        mariadb: '10.0'
     - dist: xenial
       virt: lxd
       language: c
@@ -258,6 +268,7 @@ jobs:
         - java HelloWorld
     - dist: xenial
       virt: lxd
+      language: cpp
       arch: amd64
       script:
         - g++ hello_world.cpp -o hello_world
@@ -282,7 +293,8 @@ jobs:
         - elasticsearch
         - mongodb
         - couchdb
-        - mariadb
+      addons:
+        mariadb: '10.0'
     - dist: focal
       virt: vm
       language: c
@@ -305,6 +317,7 @@ jobs:
         - java HelloWorld
     - dist: focal
       virt: vm
+      language: cpp
       arch: amd64
       script:
         - g++ hello_world.cpp -o hello_world
@@ -329,7 +342,8 @@ jobs:
         - elasticsearch
         - mongodb
         - couchdb
-        - mariadb
+      addons:
+        mariadb: '10.0'
     - dist: focal
       virt: lxd
       language: c
@@ -352,6 +366,7 @@ jobs:
         - java HelloWorld
     - dist: focal
       virt: lxd
+      language: cpp
       arch: amd64
       script:
         - g++ hello_world.cpp -o hello_world
@@ -376,4 +391,5 @@ jobs:
         - elasticsearch
         - mongodb
         - couchdb
-        - mariadb
+      addons:
+        mariadb: '10.0'
