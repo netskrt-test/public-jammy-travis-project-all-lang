@@ -44,6 +44,10 @@ jobs:
       services:
         - mysql
         - postgresql
+        - elasticsearch
+        - mongodb
+        - couchdb
+        - mariadb
     - dist: jammy
       virt: lxd
       language: c
@@ -87,6 +91,10 @@ jobs:
       services:
         - mysql
         - postgresql
+        - elasticsearch
+        - mongodb
+        - couchdb
+        - mariadb
     - dist: bionic
       virt: vm
       language: c
@@ -130,6 +138,10 @@ jobs:
       services:
         - mysql
         - postgresql
+        - elasticsearch
+        - mongodb
+        - couchdb
+        - mariadb
     - dist: bionic
       virt: lxd
       language: c
@@ -173,6 +185,10 @@ jobs:
       services:
         - mysql
         - postgresql
+        - elasticsearch
+        - mongodb
+        - couchdb
+        - mariadb
     - dist: xenial
       virt: vm
       language: c
@@ -216,6 +232,10 @@ jobs:
       services:
         - mysql
         - postgresql
+        - elasticsearch
+        - mongodb
+        - couchdb
+        - mariadb
     - dist: xenial
       virt: lxd
       language: c
@@ -259,6 +279,10 @@ jobs:
       services:
         - mysql
         - postgresql
+        - elasticsearch
+        - mongodb
+        - couchdb
+        - mariadb
     - dist: focal
       virt: vm
       language: c
@@ -302,6 +326,10 @@ jobs:
       services:
         - mysql
         - postgresql
+        - elasticsearch
+        - mongodb
+        - couchdb
+        - mariadb
     - dist: focal
       virt: lxd
       language: c
@@ -345,3 +373,7 @@ jobs:
       services:
         - mysql
         - postgresql
+        - elasticsearch
+        - mongodb
+        - couchdb
+        - mariadb
