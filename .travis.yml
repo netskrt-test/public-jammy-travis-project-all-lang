@@ -1,39 +1,346 @@
+os: linux
 jobs:
-  php: 7.3.32
   include:
-    - os: RHEL
+    - dist: jammy
+      virt: vm
       language: c
       arch: amd64
       script:
         - clang -coverage -O0 hello_world.c -o hello_world
         - ./hello_world
-    - os: RHEL
+    - dist: jammy
+      virt: vm
       language: python
       arch: amd64
       script:
         - python hello_world.py
-    - os: RHEL
+    - dist: jammy
+      virt: vm
       language: java
       arch: amd64
       script:
         - javac hello_world.java
         - java HelloWorld
-    - os: RHEL
-      dist: rhel8
+    - dist: jammy
+      virt: vm
       arch: amd64
       script:
         - g++ hello_world.cpp -o hello_world
         - ./hello_world
-    - os: RHEL
+    - dist: jammy
+      virt: vm
       arch: amd64
       script:
         - ruby hello_world.rb
-    - os: RHEL
+    - dist: jammy
+      virt: vm
       language: node_js
       arch: amd64
       script:
         - node hello_world.js
-    - os: RHEL
+    - dist: jammy
+      virt: vm
+      arch: amd64
+      services:
+        - mysql
+        - postgresql
+    - dist: jammy
+      virt: lxd
+      language: c
+      arch: amd64
+      script:
+        - clang -coverage -O0 hello_world.c -o hello_world
+        - ./hello_world
+    - dist: jammy
+      virt: lxd
+      language: python
+      arch: amd64
+      script:
+        - python hello_world.py
+    - dist: jammy
+      virt: lxd
+      language: java
+      arch: amd64
+      script:
+        - javac hello_world.java
+        - java HelloWorld
+    - dist: jammy
+      virt: lxd
+      arch: amd64
+      script:
+        - g++ hello_world.cpp -o hello_world
+        - ./hello_world
+    - dist: jammy
+      virt: lxd
+      arch: amd64
+      script:
+        - ruby hello_world.rb
+    - dist: jammy
+      virt: lxd
+      language: node_js
+      arch: amd64
+      script:
+        - node hello_world.js
+    - dist: jammy
+      virt: lxd
+      arch: amd64
+      services:
+        - mysql
+        - postgresql
+    - dist: bionic
+      virt: vm
+      language: c
+      arch: amd64
+      script:
+        - clang -coverage -O0 hello_world.c -o hello_world
+        - ./hello_world
+    - dist: bionic
+      virt: vm
+      language: python
+      arch: amd64
+      script:
+        - python hello_world.py
+    - dist: bionic
+      virt: vm
+      language: java
+      arch: amd64
+      script:
+        - javac hello_world.java
+        - java HelloWorld
+    - dist: bionic
+      virt: vm
+      arch: amd64
+      script:
+        - g++ hello_world.cpp -o hello_world
+        - ./hello_world
+    - dist: bionic
+      virt: vm
+      arch: amd64
+      script:
+        - ruby hello_world.rb
+    - dist: bionic
+      virt: vm
+      language: node_js
+      arch: amd64
+      script:
+        - node hello_world.js
+    - dist: bionic
+      virt: vm
+      arch: amd64
+      services:
+        - mysql
+        - postgresql
+    - dist: bionic
+      virt: lxd
+      language: c
+      arch: amd64
+      script:
+        - clang -coverage -O0 hello_world.c -o hello_world
+        - ./hello_world
+    - dist: bionic
+      virt: lxd
+      language: python
+      arch: amd64
+      script:
+        - python hello_world.py
+    - dist: bionic
+      virt: lxd
+      language: java
+      arch: amd64
+      script:
+        - javac hello_world.java
+        - java HelloWorld
+    - dist: bionic
+      virt: lxd
+      arch: amd64
+      script:
+        - g++ hello_world.cpp -o hello_world
+        - ./hello_world
+    - dist: bionic
+      virt: lxd
+      arch: amd64
+      script:
+        - ruby hello_world.rb
+    - dist: bionic
+      virt: lxd
+      language: node_js
+      arch: amd64
+      script:
+        - node hello_world.js
+    - dist: bionic
+      virt: lxd
+      arch: amd64
+      services:
+        - mysql
+        - postgresql
+    - dist: xenial
+      virt: vm
+      language: c
+      arch: amd64
+      script:
+        - clang -coverage -O0 hello_world.c -o hello_world
+        - ./hello_world
+    - dist: xenial
+      virt: vm
+      language: python
+      arch: amd64
+      script:
+        - python hello_world.py
+    - dist: xenial
+      virt: vm
+      language: java
+      arch: amd64
+      script:
+        - javac hello_world.java
+        - java HelloWorld
+    - dist: xenial
+      virt: vm
+      arch: amd64
+      script:
+        - g++ hello_world.cpp -o hello_world
+        - ./hello_world
+    - dist: xenial
+      virt: vm
+      arch: amd64
+      script:
+        - ruby hello_world.rb
+    - dist: xenial
+      virt: vm
+      language: node_js
+      arch: amd64
+      script:
+        - node hello_world.js
+    - dist: xenial
+      virt: vm
+      arch: amd64
+      services:
+        - mysql
+        - postgresql
+    - dist: xenial
+      virt: lxd
+      language: c
+      arch: amd64
+      script:
+        - clang -coverage -O0 hello_world.c -o hello_world
+        - ./hello_world
+    - dist: xenial
+      virt: lxd
+      language: python
+      arch: amd64
+      script:
+        - python hello_world.py
+    - dist: xenial
+      virt: lxd
+      language: java
+      arch: amd64
+      script:
+        - javac hello_world.java
+        - java HelloWorld
+    - dist: xenial
+      virt: lxd
+      arch: amd64
+      script:
+        - g++ hello_world.cpp -o hello_world
+        - ./hello_world
+    - dist: xenial
+      virt: lxd
+      arch: amd64
+      script:
+        - ruby hello_world.rb
+    - dist: xenial
+      virt: lxd
+      language: node_js
+      arch: amd64
+      script:
+        - node hello_world.js
+    - dist: xenial
+      virt: lxd
+      arch: amd64
+      services:
+        - mysql
+        - postgresql
+    - dist: focal
+      virt: vm
+      language: c
+      arch: amd64
+      script:
+        - clang -coverage -O0 hello_world.c -o hello_world
+        - ./hello_world
+    - dist: focal
+      virt: vm
+      language: python
+      arch: amd64
+      script:
+        - python hello_world.py
+    - dist: focal
+      virt: vm
+      language: java
+      arch: amd64
+      script:
+        - javac hello_world.java
+        - java HelloWorld
+    - dist: focal
+      virt: vm
+      arch: amd64
+      script:
+        - g++ hello_world.cpp -o hello_world
+        - ./hello_world
+    - dist: focal
+      virt: vm
+      arch: amd64
+      script:
+        - ruby hello_world.rb
+    - dist: focal
+      virt: vm
+      language: node_js
+      arch: amd64
+      script:
+        - node hello_world.js
+    - dist: focal
+      virt: vm
+      arch: amd64
+      services:
+        - mysql
+        - postgresql
+    - dist: focal
+      virt: lxd
+      language: c
+      arch: amd64
+      script:
+        - clang -coverage -O0 hello_world.c -o hello_world
+        - ./hello_world
+    - dist: focal
+      virt: lxd
+      language: python
+      arch: amd64
+      script:
+        - python hello_world.py
+    - dist: focal
+      virt: lxd
+      language: java
+      arch: amd64
+      script:
+        - javac hello_world.java
+        - java HelloWorld
+    - dist: focal
+      virt: lxd
+      arch: amd64
+      script:
+        - g++ hello_world.cpp -o hello_world
+        - ./hello_world
+    - dist: focal
+      virt: lxd
+      arch: amd64
+      script:
+        - ruby hello_world.rb
+    - dist: focal
+      virt: lxd
+      language: node_js
+      arch: amd64
+      script:
+        - node hello_world.js
+    - dist: focal
+      virt: lxd
       arch: amd64
       services:
         - mysql
