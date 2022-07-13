@@ -449,3 +449,67 @@ jobs:
         - couchdb
       addons:
         mariadb: '10.0'
+    - dist: jammy
+      virt: lxd
+      language: perl
+      perl:
+        - "5.30"
+        - "5.28"
+        - "5.26"
+      arch: amd64
+    - dist: jammy
+      virt: vm
+      language: perl
+      perl:
+        - "5.30"
+        - "5.28"
+        - "5.26"
+      arch: amd64
+    - dist: xenial
+      virt: vm
+      language: perl
+      perl:
+        - "5.30"
+        - "5.28"
+        - "5.26"
+      arch: amd64
+    - dist: xenial
+      virt: lxd
+      language: perl
+      perl:
+        - "5.30"
+        - "5.28"
+        - "5.26"
+      arch: amd64
+    - dist: bionic
+      virt: lxd
+      language: perl
+      perl:
+        - "5.30"
+        - "5.28"
+        - "5.26"
+      arch: amd64
+    - dist: bionic
+      virt: vm
+      language: perl
+      perl:
+        - "5.30"
+        - "5.28"
+        - "5.26"
+      arch: amd64
+    - dist: focal
+      virt: lxd
+      language: perl
+      perl:
+        - "5.30"
+        - "5.28"
+        - "5.26"
+      arch: amd64
+    - dist: xenial
+      virt: vm
+      language: perl
+      perl:
+        - "5.30"
+        - "5.28"
+        - "5.26"
+      arch: amd64
