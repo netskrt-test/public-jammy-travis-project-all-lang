@@ -3,6 +3,62 @@ jobs:
   include:
     - dist: jammy
       virt: vm
+      language: erlang
+      otp_release:
+        - "23.0.2"
+        - "22.3.4"
+      arch: amd64
+    - dist: jammy
+      virt: lxd
+      language: erlang
+      otp_release:
+        - "23.0.2"
+        - "22.3.4"
+      arch: amd64
+    - dist: bionic
+      virt: vm
+      language: erlang
+      otp_release:
+        - "23.0.2"
+        - "22.3.4"
+      arch: amd64
+    - dist: bionic
+      virt: lxd
+      language: erlang
+      otp_release:
+        - "23.0.2"
+        - "22.3.4"
+      arch: amd64
+    - dist: xenial
+      virt: vm
+      language: erlang
+      otp_release:
+        - "23.0.2"
+        - "22.3.4"
+      arch: amd64
+    - dist: xenial
+      virt: lxd
+      language: erlang
+      otp_release:
+        - "23.0.2"
+        - "22.3.4"
+    - dist: focal
+      virt: vm
+      language: erlang
+      otp_release:
+        - "23.0.2"
+        - "22.3.4"
+      arch: amd64
+    - dist: focal
+      virt: lxd
+      language: erlang
+      otp_release:
+        - "23.0.2"
+        - "22.3.4"
+      arch: amd64
+      arch: amd64
+    - dist: jammy
+      virt: vm
       language: c
       arch: amd64
       script:
