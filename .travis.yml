@@ -112,8 +112,6 @@ jobs:
         - elasticsearch
         - mongodb
         - couchdb
-      addons:
-        mariadb: '10.0'
     - dist: jammy
       virt: lxd
       language: c
@@ -161,8 +159,6 @@ jobs:
         - elasticsearch
         - mongodb
         - couchdb
-      addons:
-        mariadb: '10.0'
     - dist: bionic
       virt: vm
       language: c
@@ -210,8 +206,6 @@ jobs:
         - elasticsearch
         - mongodb
         - couchdb
-      addons:
-        mariadb: '10.0'
     - dist: bionic
       virt: lxd
       language: c
@@ -259,8 +253,6 @@ jobs:
         - elasticsearch
         - mongodb
         - couchdb
-      addons:
-        mariadb: '10.0'
     - dist: xenial
       virt: vm
       language: c
@@ -308,8 +300,6 @@ jobs:
         - elasticsearch
         - mongodb
         - couchdb
-      addons:
-        mariadb: '10.0'
     - dist: xenial
       virt: lxd
       language: c
@@ -357,8 +347,6 @@ jobs:
         - elasticsearch
         - mongodb
         - couchdb
-      addons:
-        mariadb: '10.0'
     - dist: focal
       virt: vm
       language: c
@@ -406,8 +394,6 @@ jobs:
         - elasticsearch
         - mongodb
         - couchdb
-      addons:
-        mariadb: '10.0'
     - dist: focal
       virt: lxd
       language: c
@@ -455,8 +441,6 @@ jobs:
         - elasticsearch
         - mongodb
         - couchdb
-      addons:
-        mariadb: '10.0'
     - dist: jammy
       virt: lxd
       language: perl
