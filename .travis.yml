@@ -3,70 +3,6 @@ jobs:
   include:
     - dist: jammy
       virt: vm
-      language: erlang
-      otp_release:
-        - "23.0.2"
-        - "22.3.4"
-      script: "./rebar3 eunit"
-      arch: amd64
-    - dist: jammy
-      virt: lxd
-      language: erlang
-      otp_release:
-        - "23.0.2"
-        - "22.3.4"
-      script: "./rebar3 eunit"
-      arch: amd64
-    - dist: bionic
-      virt: vm
-      language: erlang
-      otp_release:
-        - "23.0.2"
-        - "22.3.4"
-      script: "./rebar3 eunit"
-      arch: amd64
-    - dist: bionic
-      virt: lxd
-      language: erlang
-      otp_release:
-        - "23.0.2"
-        - "22.3.4"
-      script: "./rebar3 eunit"
-      arch: amd64
-    - dist: xenial
-      virt: vm
-      language: erlang
-      otp_release:
-        - "23.0.2"
-        - "22.3.4"
-      script: "./rebar3 eunit"
-      arch: amd64
-    - dist: xenial
-      virt: lxd
-      language: erlang
-      otp_release:
-        - "23.0.2"
-        - "22.3.4"
-      script: "./rebar3 eunit"
-    - dist: focal
-      virt: vm
-      language: erlang
-      otp_release:
-        - "23.0.2"
-        - "22.3.4"
-      script: "./rebar3 eunit"
-      arch: amd64
-    - dist: focal
-      virt: lxd
-      language: erlang
-      otp_release:
-        - "23.0.2"
-        - "22.3.4"
-      script: "./rebar3 eunit"
-      arch: amd64
-      arch: amd64
-    - dist: jammy
-      virt: vm
       language: c
       arch: amd64
       script:
@@ -112,6 +48,8 @@ jobs:
         - elasticsearch
         - mongodb
         - couchdb
+      script:
+        - ruby hello_world.rb
     - dist: jammy
       virt: lxd
       language: c
@@ -159,6 +97,8 @@ jobs:
         - elasticsearch
         - mongodb
         - couchdb
+      script:
+        - ruby hello_world.rb
     - dist: bionic
       virt: vm
       language: c
@@ -206,6 +146,8 @@ jobs:
         - elasticsearch
         - mongodb
         - couchdb
+      script:
+        - ruby hello_world.rb
     - dist: bionic
       virt: lxd
       language: c
@@ -253,6 +195,8 @@ jobs:
         - elasticsearch
         - mongodb
         - couchdb
+      script:
+        - ruby hello_world.rb
     - dist: xenial
       virt: vm
       language: c
@@ -300,6 +244,8 @@ jobs:
         - elasticsearch
         - mongodb
         - couchdb
+      script:
+        - ruby hello_world.rb
     - dist: xenial
       virt: lxd
       language: c
@@ -347,6 +293,8 @@ jobs:
         - elasticsearch
         - mongodb
         - couchdb
+      script:
+        - ruby hello_world.rb
     - dist: focal
       virt: vm
       language: c
@@ -394,6 +342,8 @@ jobs:
         - elasticsearch
         - mongodb
         - couchdb
+      script:
+        - ruby hello_world.rb
     - dist: focal
       virt: lxd
       language: c
@@ -441,67 +391,5 @@ jobs:
         - elasticsearch
         - mongodb
         - couchdb
-    - dist: jammy
-      virt: lxd
-      language: perl
-      perl:
-        - "5.30"
-        - "5.28"
-        - "5.26"
-      arch: amd64
-    - dist: jammy
-      virt: vm
-      language: perl
-      perl:
-        - "5.30"
-        - "5.28"
-        - "5.26"
-      arch: amd64
-    - dist: xenial
-      virt: vm
-      language: perl
-      perl:
-        - "5.30"
-        - "5.28"
-        - "5.26"
-      arch: amd64
-    - dist: xenial
-      virt: lxd
-      language: perl
-      perl:
-        - "5.30"
-        - "5.28"
-        - "5.26"
-      arch: amd64
-    - dist: bionic
-      virt: lxd
-      language: perl
-      perl:
-        - "5.30"
-        - "5.28"
-        - "5.26"
-      arch: amd64
-    - dist: bionic
-      virt: vm
-      language: perl
-      perl:
-        - "5.30"
-        - "5.28"
-        - "5.26"
-      arch: amd64
-    - dist: focal
-      virt: lxd
-      language: perl
-      perl:
-        - "5.30"
-        - "5.28"
-        - "5.26"
-      arch: amd64
-    - dist: xenial
-      virt: vm
-      language: perl
-      perl:
-        - "5.30"
-        - "5.28"
-        - "5.26"
-      arch: amd64
+      script:
+        - ruby hello_world.rb
